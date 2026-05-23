@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quizgenerator | EduVerse AI</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+padding:40px;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+h1{
+color:#5b4bff;
+margin-bottom:30px;
+}
+
+.form-group{
+margin-bottom:25px;
+}
+
+label{
+display:block;
+margin-bottom:8px;
+font-weight:bold;
+}
+
+input,
+select{
+width:100%;
+padding:12px;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+.checkbox-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:12px;
+margin-top:10px;
+}
+
+.checkbox-grid label{
+display:flex;
+align-items:center;
+gap:10px;
+padding:12px;
+background:#f5f7fb;
+border:1px solid #ddd;
+border-radius:10px;
+cursor:pointer;
+}
+
+.checkbox-grid input{
+width:auto;
+}
+
+.button{
+background:#5b4bff;
+color:white;
+border:none;
+padding:15px 25px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+.result-box{
+margin-top:40px;
+padding:25px;
+background:#f5f7fb;
+border-radius:15px;
+}
+
+.result-box h2{
+color:#5b4bff;
+margin-bottom:15px;
+}
+
+.result-box li{
+margin-bottom:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎯 Quizgenerator</h1>
+
+<div class="form-group">
+<label>Fach</label>
+
+<select>
+<option>Mathematik</option>
+<option>Deutsch</option>
+<option>Englisch</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Schulstufe</label>
+
+<select>
+<option>1. Klasse</option>
+<option>2. Klasse</option>
+<option>3. Klasse</option>
+<option>4. Klasse</option>
+<option>5. Klasse</option>
+<option>6. Klasse</option>
+<option>7. Klasse</option>
+<option>8. Klasse</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Thema</label>
+
+<input type="text" placeholder="z.B. Prozentrechnung">
+</div>
+
+<div class="form-group">
+<label>Anzahl Fragen</label>
+
+<input type="number" placeholder="10">
+</div>
+
+<div class="form-group">
+
+<label>Fragetypen</label>
+
+<div class="checkbox-grid">
+
+<label><input type="checkbox"> Multiple Choice</label>
+<label><input type="checkbox"> Wahr / Falsch</label>
+<label><input type="checkbox"> Freitext</label>
+<label><input type="checkbox"> Gemischtes Quiz</label>
+
+</div>
+
+</div>
+
+<button class="button">
+✨ Quiz generieren
+</button>
+
+<div class="result-box">
+
+<h2>Generierte Inhalte</h2>
+
+<ul>
+<li>🎯 Quiz erstellt</li>
+<li>📄 PDF Export</li>
+<li>🔗 Quiz-Link erzeugen</li>
+<li>👨‍🎓 Für Klassen freigeben</li>
+</ul>
+
+</div>
+
+</div>
+
+</body>
+</html>
