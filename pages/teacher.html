@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EduVerse AI - Lehrerportal</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+display:flex;
+min-height:100vh;
+}
+
+.sidebar{
+width:260px;
+background:#5b4bff;
+color:white;
+padding:30px;
+}
+
+.sidebar h2{
+margin-bottom:40px;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar li{
+margin-bottom:20px;
+}
+
+.sidebar a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.main{
+flex:1;
+padding:40px;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:40px;
+}
+
+.header h1{
+font-size:2rem;
+}
+
+.card-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.button{
+display:inline-block;
+margin-top:20px;
+padding:12px 24px;
+background:#5b4bff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="sidebar">
+
+<h2>EduVerse AI</h2>
+
+<ul>
+<li><a href="#">Dashboard</a></li>
+<li><a href="#">Schularbeiten</a></li>
+<li><a href="#">Arbeitsblätter</a></li>
+<li><a href="#">Quiz</a></li>
+<li><a href="#">Aufgabenbibliothek</a></li>
+<li><a href="#">Klassen</a></li>
+<li><a href="#">Einstellungen</a></li>
+</ul>
+
+</div>
+
+<div class="main">
+
+<div class="header">
+<h1>Lehrer-Dashboard</h1>
+</div>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>📄 Schularbeiten</h3>
+<p>Neue Schularbeiten mit KI erstellen.</p>
+<a href="#" class="button">Öffnen</a>
+</div>
+
+<div class="card">
+<h3>📝 Arbeitsblätter</h3>
+<p>Arbeitsblätter automatisch generieren.</p>
+<a href="#" class="button">Öffnen</a>
+</div>
+
+<div class="card">
+<h3>🎯 Quizgenerator</h3>
+<p>Quiz für Klassen erstellen.</p>
+<a href="#" class="button">Öffnen</a>
+</div>
+
+<div class="card">
+<h3>📚 Aufgabenbibliothek</h3>
+<p>Aufgaben speichern und verwalten.</p>
+<a href="#" class="button">Öffnen</a>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
