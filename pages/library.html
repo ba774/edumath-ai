@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aufgabenbibliothek | EduVerse AI</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+padding:40px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+h1{
+color:#5b4bff;
+margin-bottom:30px;
+}
+
+.search-box{
+margin-bottom:30px;
+}
+
+.search-box input{
+width:100%;
+padding:15px;
+border:1px solid #ddd;
+border-radius:12px;
+font-size:16px;
+}
+
+.filters{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+margin-bottom:30px;
+}
+
+.filters select{
+padding:12px;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+.card-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#5b4bff;
+}
+
+.card p{
+margin-bottom:8px;
+color:#555;
+}
+
+.button{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#5b4bff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📚 Aufgabenbibliothek</h1>
+
+<div class="search-box">
+<input type="text" placeholder="Aufgaben suchen...">
+</div>
+
+<div class="filters">
+
+<select>
+<option>Alle Fächer</option>
+<option>Mathematik</option>
+<option>Deutsch</option>
+<option>Englisch</option>
+</select>
+
+<select>
+<option>Alle Themen</option>
+<option>Bruchrechnen</option>
+<option>Prozentrechnung</option>
+<option>Gleichungen</option>
+<option>Geometrie</option>
+</select>
+
+<select>
+<option>Alle Schwierigkeitsstufen</option>
+<option>Leicht</option>
+<option>Mittel</option>
+<option>Schwer</option>
+</select>
+
+</div>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Prozentrechnung</h3>
+<p>Schwierigkeit: Mittel</p>
+<p>Punkte: 4</p>
+<a href="#" class="button">Bearbeiten</a>
+</div>
+
+<div class="card">
+<h3>Bruchrechnen</h3>
+<p>Schwierigkeit: Leicht</p>
+<p>Punkte: 3</p>
+<a href="#" class="button">Bearbeiten</a>
+</div>
+
+<div class="card">
+<h3>Gleichungen</h3>
+<p>Schwierigkeit: Schwer</p>
+<p>Punkte: 6</p>
+<a href="#" class="button">Bearbeiten</a>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
