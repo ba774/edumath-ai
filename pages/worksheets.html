@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Arbeitsblattgenerator | EduVerse AI</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+padding:40px;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+h1{
+color:#5b4bff;
+margin-bottom:30px;
+}
+
+.form-group{
+margin-bottom:25px;
+}
+
+label{
+display:block;
+margin-bottom:8px;
+font-weight:bold;
+}
+
+input,
+select{
+width:100%;
+padding:12px;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+.checkbox-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:12px;
+margin-top:10px;
+}
+
+.checkbox-grid label{
+display:flex;
+align-items:center;
+gap:10px;
+padding:12px;
+background:#f5f7fb;
+border:1px solid #ddd;
+border-radius:10px;
+cursor:pointer;
+}
+
+.checkbox-grid input{
+width:auto;
+}
+
+.button{
+background:#5b4bff;
+color:white;
+border:none;
+padding:15px 25px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+.button:hover{
+opacity:0.9;
+}
+
+.result-box{
+margin-top:40px;
+padding:25px;
+background:#f5f7fb;
+border-radius:15px;
+}
+
+.result-box h2{
+color:#5b4bff;
+margin-bottom:15px;
+}
+
+.result-box ul{
+padding-left:20px;
+}
+
+.result-box li{
+margin-bottom:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📝 Arbeitsblattgenerator</h1>
+
+<div class="form-group">
+<label>Fach</label>
+
+<select>
+<option>Mathematik</option>
+<option>Deutsch</option>
+<option>Englisch</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Schulstufe</label>
+
+<select>
+<option>1. Klasse</option>
+<option>2. Klasse</option>
+<option>3. Klasse</option>
+<option>4. Klasse</option>
+<option>5. Klasse</option>
+<option>6. Klasse</option>
+<option>7. Klasse</option>
+<option>8. Klasse</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Themen auswählen</label>
+
+<div class="checkbox-grid">
+
+<label><input type="checkbox"> Bruchrechnen</label>
+<label><input type="checkbox"> Prozentrechnung</label>
+<label><input type="checkbox"> Gleichungen</label>
+<label><input type="checkbox"> Geometrie</label>
+<label><input type="checkbox"> Funktionen</label>
+<label><input type="checkbox"> Statistik</label>
+
+</div>
+
+</div>
+
+<div class="form-group">
+<label>Schwierigkeit</label>
+
+<select>
+<option>Leicht</option>
+<option>Mittel</option>
+<option>Schwer</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Anzahl der Aufgaben</label>
+
+<input type="number" placeholder="z.B. 10">
+</div>
+
+<div class="form-group">
+
+<label>Optionen</label>
+
+<div class="checkbox-grid">
+
+<label><input type="checkbox"> Lösungen erstellen</label>
+<label><input type="checkbox"> Förderversion</label>
+<label><input type="checkbox"> Word Export</label>
+<label><input type="checkbox"> PDF Export</label>
+
+</div>
+
+</div>
+
+<button class="button">
+✨ Arbeitsblatt generieren
+</button>
+
+<div class="result-box">
+
+<h2>Generierte Inhalte</h2>
+
+<ul>
+<li>📝 Arbeitsblatt</li>
+<li>✅ Lösungen</li>
+<li>📚 Förderversion</li>
+<li>📄 DOCX Export</li>
+<li>📕 PDF Export</li>
+</ul>
+
+</div>
+
+</div>
+
+</body>
+</html>
