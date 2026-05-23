@@ -3,58 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>EduMath AI</title>
 
 <style>
-body{.audiences {
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.audience-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    gap: 30px;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.card {.card h3{
-    margin:20px 20px 10px;
-    font-size:1.4rem;
-    color:#222;
-}
-
-.card p{
-    margin:0 20px 25px;
-    color:#666;
-    line-height:1.6;
-}
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,.1);
-    transition: .3s;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-}
-
-.card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-}
-
-.card h3 {
-    padding-top: 20px;
-}
-
-.card p {
-    padding: 0 20px 25px;
-}
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
 font-family:Arial,sans-serif;
 background:#f5f7fb;
 color:#222;
@@ -68,84 +27,150 @@ color:white;
 }
 
 .hero img{
-max-width:500px;
+max-width:650px;
 width:90%;
 margin-bottom:30px;
 }
 
 .hero h1{
-font-size:3rem;
+font-size:4rem;
 margin-bottom:20px;
 }
 
 .hero p{
-font-size:1.3rem;
-max-width:700px;
+font-size:1.4rem;
+max-width:900px;
 margin:auto;
-margin-bottom:30px;
+margin-bottom:40px;
+line-height:1.6;
 }
 
 .button{
+display:inline-block;
 background:white;
 color:#5b4bff;
-padding:15px 35px;
-border-radius:12px;
+padding:18px 40px;
+border-radius:15px;
 text-decoration:none;
 font-weight:bold;
-font-size:1.1rem;
+font-size:1.2rem;
 }
 
-.section{
-max-width:1200px;
-margin:auto;
-padding:70px 20px;
+.audiences{
+background:linear-gradient(135deg,#5b4bff,#7f6dff);
+padding:80px 20px;
 }
 
-.section h2{
+.audiences h2{
 text-align:center;
-margin-bottom:40px;
+color:white;
+font-size:3rem;
+margin-bottom:50px;
 }
 
-.cards{
+.audience-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+max-width:1400px;
+margin:auto;
 }
 
 .card{
 background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card h3{
+padding:25px 25px 10px;
+font-size:1.5rem;
+}
+
+.card p{
+padding:0 25px 30px;
+line-height:1.7;
+color:#555;
+}
+
+.features{
+padding:100px 20px;
+max-width:1400px;
+margin:auto;
+}
+
+.features h2{
+text-align:center;
+font-size:3rem;
+margin-bottom:50px;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.feature{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.feature h3{
+margin-bottom:15px;
+}
+
+.contact{
+background:#111827;
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+.contact h2{
+font-size:3rem;
+margin-bottom:20px;
 }
 
 footer{
-background:#111827;
+background:black;
 color:white;
 text-align:center;
-padding:40px;
+padding:30px;
 }
 </style>
 
 </head>
+
 <body>
 
 <section class="hero">
 
-<section class="hero">
-    <img src="logo.png"
-         alt="EduMath AI"
-         style="max-width:650px;width:90%;margin-bottom:30px;">
+<img src="logo.png" alt="EduMath AI">
 
-    <h1>Mathematik verstehen. Potentiale entfalten.</h1>
+<h1>Mathematik verstehen. Potentiale entfalten.</h1>
 
-    <p>
-        KI-gestützte Lernplattform für Schüler:innen,
-        Lehrkräfte, Eltern und Homeschooling-Familien.
-    </p>
+<p>
+Die KI-Lernplattform für Schüler:innen, Lehrkräfte,
+Eltern und Homeschooling-Familien in Österreich.
+</p>
 
-    <button>Kostenlos testen</button>
+<a href="#" class="button">
+Kostenlos testen
+</a>
+
 </section>
+
 <section class="audiences">
 
 <h2>Für wen ist EduMath AI?</h2>
@@ -156,7 +181,8 @@ padding:40px;
 <img src="students.jpg" alt="">
 <h3>Schüler:innen</h3>
 <p>
-Individuelle Lernwege, Prüfungsvorbereitung und verständliche KI-Erklärungen.
+Individuelle Lernwege, verständliche Erklärungen,
+Prüfungsvorbereitung und KI-Unterstützung.
 </p>
 </div>
 
@@ -164,7 +190,8 @@ Individuelle Lernwege, Prüfungsvorbereitung und verständliche KI-Erklärungen.
 <img src="teacher.jpg" alt="">
 <h3>Lehrkräfte</h3>
 <p>
-Arbeitsblätter erstellen, differenzieren und Unterricht planen.
+Arbeitsblätter erstellen, differenzieren und
+Unterricht effizient planen.
 </p>
 </div>
 
@@ -172,7 +199,8 @@ Arbeitsblätter erstellen, differenzieren und Unterricht planen.
 <img src="homeschool.jpg" alt="">
 <h3>Homeschooling</h3>
 <p>
-Flexible Lernpfade für Familien und selbstständiges Lernen.
+Flexible Lernpfade und strukturierte Begleitung
+für Familien.
 </p>
 </div>
 
@@ -180,79 +208,61 @@ Flexible Lernpfade für Familien und selbstständiges Lernen.
 <img src="neurodiversity.jpg" alt="">
 <h3>Neurodiversität</h3>
 <p>
-Unterstützung für unterschiedliche Denkweisen und Lernstile.
+Unterstützung für unterschiedliche Lernprofile,
+ADHS, Autismus und individuelle Stärken.
 </p>
 </div>
 
 </div>
 
-</section><section class="audiences">
+</section>
 
-    <h2>Für wen ist EduMath AI?</h2>
+<section class="features">
 
-    <div class="card">
-        <img src="students.jpg" width="400">
-        <h3>Schüler:innen</h3>
-        <p>Individuelle Lernwege, KI-Erklärungen und Prüfungsvorbereitung.</p>
-    </div>
+<h2>Unsere Funktionen</h2>
 
-    <div class="card">
-        <img src="teacher.jpg" width="400">
-        <h3>Lehrkräfte</h3>
-        <p>Arbeitsblätter, Differenzierung und Unterrichtsplanung.</p>
-    </div>
+<div class="feature-grid">
 
-    <div class="card">
-        <img src="homeschool.jpg" width="400">
-        <h3>Homeschooling</h3>
-        <p>Komplette Lernpfade und adaptive Unterstützung.</p>
-    </div>
+<div class="feature">
+<h3>🧠 KI Lerncoach</h3>
+<p>
+Erklärt Mathematik Schritt für Schritt.
+</p>
+</div>
 
-    <div class="card">
-        <img src="neurodiversity.jpg" width="400">
-        <h3>Neurodiversität</h3>
-        <p>Für unterschiedliche Denkweisen, Stärken und Lernprofile.</p>
-    </div>
+<div class="feature">
+<h3>📚 Arbeitsblätter</h3>
+<p>
+Automatische Erstellung passender Übungen.
+</p>
+</div>
+
+<div class="feature">
+<h3>📊 Lernanalyse</h3>
+<p>
+Stärken und Förderbereiche erkennen.
+</p>
+</div>
+
+<div class="feature">
+<h3>🌈 Inklusive Bildung</h3>
+<p>
+Unterstützung für unterschiedliche Lernwege.
+</p>
+</div>
+
+</div>
 
 </section>
-<h1>Mathematik verstehen. Potentiale entfalten.</h1>
+
+<section class="contact">
+
+<h2>EduMath AI für Österreich</h2>
 
 <p>
-KI-gestützte Lernplattform für Schüler:innen,
-Lehrkräfte, Eltern und Homeschooling-Familien.
+Entwickelt für moderne Mathematikbildung,
+Schulen, Lernzentren und Familien.
 </p>
-
-<a href="#" class="button">Kostenlos testen</a>
-
-</section>
-
-<section class="section">
-
-<h2>Für wen ist EduMath AI?</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>👩‍🏫 Lehrkräfte</h3>
-<p>Arbeitsblätter, Differenzierung, Unterrichtsplanung und KI-Unterstützung.</p>
-</div>
-
-<div class="card">
-<h3>🧒 Schüler:innen</h3>
-<p>Mathematik verständlich erklärt mit individueller Unterstützung.</p>
-</div>
-
-<div class="card">
-<h3>🏠 Homeschooling</h3>
-<p>Komplette Begleitung für Eltern und Lernbegleiter.</p>
-</div>
-
-<div class="card">
-<h3>🌈 Neurodiversität</h3>
-<p>Unterstützung für unterschiedliche Lernwege und Begabungen.</p>
-</div>
-
-</div>
 
 </section>
 
