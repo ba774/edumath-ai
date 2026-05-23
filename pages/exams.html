@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Schularbeiten Generator</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+padding:40px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+h1{
+margin-bottom:30px;
+color:#5b4bff;
+}
+
+.form-group{
+margin-bottom:25px;
+}
+
+label{
+display:block;
+margin-bottom:8px;
+font-weight:bold;
+}
+
+input,
+select{
+width:100%;
+padding:12px;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+.button{
+background:#5b4bff;
+color:white;
+border:none;
+padding:15px 25px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+.button:hover{
+opacity:0.9;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>📄 Schularbeiten-Generator</h1>
+
+<div class="form-group">
+<label>Fach</label>
+<select>
+<option>Mathematik</option>
+<option>Deutsch</option>
+<option>Englisch</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Schulstufe</label>
+<select>
+<option>5. Klasse</option>
+<option>6. Klasse</option>
+<option>7. Klasse</option>
+<option>8. Klasse</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Thema</label>
+<input type="text" placeholder="z.B. Prozentrechnung">
+</div>
+
+<div class="form-group">
+<label>Dauer (Minuten)</label>
+<input type="number" placeholder="50">
+</div>
+
+<div class="form-group">
+<label>Punkte</label>
+<input type="number" placeholder="40">
+</div>
+
+<div class="form-group">
+<label>Schwierigkeit</label>
+<select>
+<option>Leicht</option>
+<option>Mittel</option>
+<option>Schwer</option>
+</select>
+</div>
+
+<button class="button">
+✨ Schularbeit generieren
+</button>
+
+</div>
+
+</body>
+</html>
